@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedule</title>
+</head>
+<style>
+    .ontime{
+        color: aquamarine;
+    }
+    .delayed{
+        color: rgb(209, 9, 75);
+    }
+    .cancelled{
+        color: black;
+    }
+</style>
+<body>
+    <h1>Airline Flight Schedule</h1>
+    <table border="1" cellpadding="5">
+        <caption><strong>Fligt Schedule</strong></caption>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tr style="background-color: black; color: aliceblue;">
+            <td>AI101</td>
+            <td>London (LHR)</td>
+            <td>08:00 AM</td>
+            <td>02:30 PM</td>
+            <td><abbr title="8 hours and 30 minutes">08h 30m</abbr></td>
+            <td class="ontime">On time</td>
+        </tr>
+        <tr>
+            <td>6E203</td>
+            <td>Mumbai (BOM)</td>
+            <td>10:15 AM</td>
+            <td>12:00 PM</td>
+            <td><abbr title="1 hour and 45 minutes">01h 45m</abbr></td>
+            <td class="delayed">Delayed</td>
+        </tr>
+        <tr style="background-color: black; color: aliceblue;">
+            <td>QR541</td>
+            <td>Doha (DOH)</td>
+            <td>09:00 PM</td>
+            <td>11:30 PM</td>
+            <td><abbr title="2 hours and 30 minutes">02h 30m</abbr></td>
+            <td class="ontime">on time</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form with Star Ratings</title>
+</head>
+<body>
+    <form action="\Submit">
+        <label for="Full name">Full Name:</label><br> 
+        <input type="text" id="username" name="username" required><br><br> 
+
+        <label for="email">email:</label><br> 
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label>Rate the Website:</label>
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">5 Stars</label><br>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">4 Stars</label><br>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">3 Stars</label><br>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">2 Stars</label><br>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">1 Star</label><br>
+                    <br>
+
+        <label for="comments">Feedback:</label><br>
+        <textarea id="comments" name="comments" rows="3" style="width: 250px; padding: 5px;"></textarea><br><br>        
+        <label for="feedbackType">Type of Feedback:</label>
+                <select id="feedbackType" name="feedbackType" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="bug_report">Bug Report</option>
+                    <option value="compliment">Compliment</option>
+                    <option value="general_enquiry">General Enquiry</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label>Would you recommend us?</label>
+                <div class="recommend-group">
+                    <input type="radio" id="recommendYes" name="recommend" value="yes" required>
+                    <label for="recommendYes">Yes</label>
+                    <input type="radio" id="recommendNo" name="recommend" value="no">
+                    <label for="recommendNo">No</label>
+                    <br>
+                    <br>
+                    
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

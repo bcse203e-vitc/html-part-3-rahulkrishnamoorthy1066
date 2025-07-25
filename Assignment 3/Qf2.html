@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form for an Online Event</title>
+</head>
+<body>
+    <h1>Registration Form for an Online Event</h1>
+    <form action="/Register" method="post"> 
+        <label for="Full name">Full Name:</label><br> 
+        <input type="text" id="username" name="username" required><br><br> 
+
+        <label for="email">email:</label><br> 
+        <input type="email" id="email" name="email"><br><br>
+ 
+        <label for="Number">Phone Number:</label><br>
+        <input type="number" id="number" name="number"><br><br>
+        
+        <label >Gender:</label><br>
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label for="ageGroup">Age Group:</label>
+        <select id="ageGroup" name="ageGroup" required >
+            <option value="">text--Select--</option>
+            <option value="under18">Under 18</option>
+            <option value="adult">18+</option>
+        </select>    <br><br>
+
+        <label>Topics of Interest:</label><br>
+        <input type="checkbox" id="tech" name="topics" value="technology">
+        <label for="tech">Technology</label><br>
+        <input type="checkbox" id="business" name="topics" value="business">
+        <label for="business">Business</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="3" style="width: 250px; padding: 5px;"></textarea>
+        <br><br><br>
+        <button type="submit" style="padding: 10px 20px; background-color: green; color: white; border: none; cursor: pointer;">Register</button>
+
+    </form>
+    
+</body>
+</html>
